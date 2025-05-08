@@ -10,18 +10,10 @@ from langchain_core.prompts import PromptTemplate
 from pydantic import BaseModel
 from common.prompt_template import prompt_text_base
 from download_text_data import get_text_data
+from common.base_class import Output, QA
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
-# 각 QA를 구성하는 클래스
-class QA(BaseModel):
-    question: str
-    answer: str
-
-# QA 전체를 담는 클래스
-class Output(BaseModel):
-    qa_list: List[QA]
 
 # JSON 변환 파서 설정
 output_parser = PydanticOutputParser(pydantic_object=Output)
