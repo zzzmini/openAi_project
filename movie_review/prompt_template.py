@@ -53,3 +53,21 @@ prompt_summary_langchain="""
 {reviews}
 ...reviews
 """
+prompt_integration ="""
+다음은 영화에 대한 리뷰들입니다.
+1. 영화에 대해 긍정적이면 1, 부정적이면 0으로 평가해 주세요.
+2. 리뷰에서 긍정적인 키워드, 부정적인 키워드를 추출해 주세요.
+3. 리뷰 내용들을 종합적으로 요약해 주세요. 단, 3줄로 요약해 주세요.
+...reviews
+{reviews}
+"""
+
+prompt_integration_langchain ="""
+다음은 영화에 대한 리뷰들입니다.
+1. 영화에 대해 긍정적이면 1, 부정적이면 0으로 평가해 주세요.
+2. 리뷰에서 긍정적인 키워드, 부정적인 키워드를 추출해 주세요.
+3. 리뷰 내용들을 종합적으로 요약해 주세요. 단, 3줄로 요약해 주세요.
+{format_instructions}
+...reviews
+{reviews}
+"""
