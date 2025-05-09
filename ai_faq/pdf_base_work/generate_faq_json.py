@@ -6,9 +6,9 @@ from langchain_core.output_parsers import PydanticOutputParser
 from openai import Client
 import tiktoken
 from common.base_class import Output
-from pdf_chunking_save import attention_policy_chunking
+from pdf_base_work.pdf_chunking_save import attention_policy_chunking
 from common.prompt_template import prompt_pdf_base
-from pdf_chunking_save import attention_policy_chunking
+from pdf_base_work.pdf_chunking_save import attention_policy_chunking
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 embedding_model = OpenAIEmbeddings(api_key=OPENAI_API_KEY)

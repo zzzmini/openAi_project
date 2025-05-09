@@ -6,7 +6,7 @@ from openai import Client
 import os
 
 from common.prompt_template import prompt_image_base
-from download_image_data import get_urls
+from image_base_work.download_image_data import get_urls
 from common.base_class import Output, QA
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

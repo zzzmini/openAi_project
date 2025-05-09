@@ -20,3 +20,11 @@ FAQ는 50개를 생성해 주세요.
 ...
 {info_detail}
 """
+
+prompt_qa = """
+Answer the question based only on the following context:
+{context}
+Question: {question}
+
+Answer in the following language: korean
+"""
